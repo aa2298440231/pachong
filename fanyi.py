@@ -26,6 +26,7 @@ heades_data={
 # 'Referer':"http://fanyi.youdao.com/",
 # 'X-Requested-With':"XMLHttpRequest",
 }
+
 str="yes"#"Internal Server Error"
 str=input()
 response=urllib.request.Request(url=url,headers=heades_data,data=urllib.parse.urlencode(get_post(str)).encode("utf-8"))
